@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0FD197B06A2B62A78E34E7C5 /* Pods_facultycollab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE7C3F00725629368B6B87F /* Pods_facultycollab.framework */; };
 		FC83203B2344025500D0CF55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC83203A2344025500D0CF55 /* AppDelegate.swift */; };
 		FC83203D2344025500D0CF55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC83203C2344025500D0CF55 /* SceneDelegate.swift */; };
 		FC83203F2344025500D0CF55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC83203E2344025500D0CF55 /* ContentView.swift */; };
 		FC8320412344025700D0CF55 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC8320402344025700D0CF55 /* Assets.xcassets */; };
 		FC8320442344025700D0CF55 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC8320432344025700D0CF55 /* Preview Assets.xcassets */; };
 		FC8320472344025700D0CF55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8320452344025700D0CF55 /* LaunchScreen.storyboard */; };
+		FC83204F23440BCE00D0CF55 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC83204E23440BCE00D0CF55 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1112430AC5939B6BA28B90C3 /* Pods-facultycollab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-facultycollab.debug.xcconfig"; path = "Target Support Files/Pods-facultycollab/Pods-facultycollab.debug.xcconfig"; sourceTree = "<group>"; };
+		4545FE46AEBE42382E7D6EE6 /* Pods-facultycollab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-facultycollab.release.xcconfig"; path = "Target Support Files/Pods-facultycollab/Pods-facultycollab.release.xcconfig"; sourceTree = "<group>"; };
+		7BE7C3F00725629368B6B87F /* Pods_facultycollab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_facultycollab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC8320372344025500D0CF55 /* facultycollab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = facultycollab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC83203A2344025500D0CF55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC83203C2344025500D0CF55 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		FC8320432344025700D0CF55 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FC8320462344025700D0CF55 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC8320482344025700D0CF55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC83204E23440BCE00D0CF55 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FD197B06A2B62A78E34E7C5 /* Pods_facultycollab.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		223B63D790F219B5DBF90427 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BE7C3F00725629368B6B87F /* Pods_facultycollab.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		56CF5EC887919EA439653FD8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1112430AC5939B6BA28B90C3 /* Pods-facultycollab.debug.xcconfig */,
+				4545FE46AEBE42382E7D6EE6 /* Pods-facultycollab.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FC83202E2344025400D0CF55 = {
 			isa = PBXGroup;
 			children = (
+				FC83204E23440BCE00D0CF55 /* GoogleService-Info.plist */,
 				FC8320392344025500D0CF55 /* facultycollab */,
 				FC8320382344025500D0CF55 /* Products */,
+				56CF5EC887919EA439653FD8 /* Pods */,
+				223B63D790F219B5DBF90427 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC83204B2344025700D0CF55 /* Build configuration list for PBXNativeTarget "facultycollab" */;
 			buildPhases = (
+				4CC5756DAE11D313373E4845 /* [CP] Check Pods Manifest.lock */,
 				FC8320332344025400D0CF55 /* Sources */,
 				FC8320342344025400D0CF55 /* Frameworks */,
 				FC8320352344025400D0CF55 /* Resources */,
+				B5B5DA022FA350C71C13340C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -134,12 +164,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC8320472344025700D0CF55 /* LaunchScreen.storyboard in Resources */,
+				FC83204F23440BCE00D0CF55 /* GoogleService-Info.plist in Resources */,
 				FC8320442344025700D0CF55 /* Preview Assets.xcassets in Resources */,
 				FC8320412344025700D0CF55 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CC5756DAE11D313373E4845 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-facultycollab-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5B5DA022FA350C71C13340C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-facultycollab/Pods-facultycollab-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-facultycollab/Pods-facultycollab-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-facultycollab/Pods-facultycollab-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FC8320332344025400D0CF55 /* Sources */ = {
@@ -282,6 +355,7 @@
 		};
 		FC83204C2344025700D0CF55 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1112430AC5939B6BA28B90C3 /* Pods-facultycollab.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +376,7 @@
 		};
 		FC83204D2344025700D0CF55 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4545FE46AEBE42382E7D6EE6 /* Pods-facultycollab.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
