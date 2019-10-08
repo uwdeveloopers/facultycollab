@@ -3,11 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0FD197B06A2B62A78E34E7C5 /* Pods_facultycollab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BE7C3F00725629368B6B87F /* Pods_facultycollab.framework */; };
+		FC5EF37C234D412B003FFB65 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5EF37B234D412B003FFB65 /* MainView.swift */; };
+		FC5EF37E234D4178003FFB65 /* CreateProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5EF37D234D4178003FFB65 /* CreateProjectView.swift */; };
+		FC5EF380234D4183003FFB65 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5EF37F234D4183003FFB65 /* ChatView.swift */; };
+		FC5EF382234D418D003FFB65 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5EF381234D418D003FFB65 /* DashboardView.swift */; };
 		FC83203B2344025500D0CF55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC83203A2344025500D0CF55 /* AppDelegate.swift */; };
 		FC83203D2344025500D0CF55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC83203C2344025500D0CF55 /* SceneDelegate.swift */; };
 		FC83203F2344025500D0CF55 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC83203E2344025500D0CF55 /* ContentView.swift */; };
@@ -21,6 +25,10 @@
 		1112430AC5939B6BA28B90C3 /* Pods-facultycollab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-facultycollab.debug.xcconfig"; path = "Target Support Files/Pods-facultycollab/Pods-facultycollab.debug.xcconfig"; sourceTree = "<group>"; };
 		4545FE46AEBE42382E7D6EE6 /* Pods-facultycollab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-facultycollab.release.xcconfig"; path = "Target Support Files/Pods-facultycollab/Pods-facultycollab.release.xcconfig"; sourceTree = "<group>"; };
 		7BE7C3F00725629368B6B87F /* Pods_facultycollab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_facultycollab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC5EF37B234D412B003FFB65 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		FC5EF37D234D4178003FFB65 /* CreateProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateProjectView.swift; sourceTree = "<group>"; };
+		FC5EF37F234D4183003FFB65 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		FC5EF381234D418D003FFB65 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		FC8320372344025500D0CF55 /* facultycollab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = facultycollab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC83203A2344025500D0CF55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC83203C2344025500D0CF55 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,7 +66,6 @@
 				1112430AC5939B6BA28B90C3 /* Pods-facultycollab.debug.xcconfig */,
 				4545FE46AEBE42382E7D6EE6 /* Pods-facultycollab.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -87,6 +94,10 @@
 				FC83203A2344025500D0CF55 /* AppDelegate.swift */,
 				FC83203C2344025500D0CF55 /* SceneDelegate.swift */,
 				FC83203E2344025500D0CF55 /* ContentView.swift */,
+				FC5EF37B234D412B003FFB65 /* MainView.swift */,
+				FC5EF37D234D4178003FFB65 /* CreateProjectView.swift */,
+				FC5EF37F234D4183003FFB65 /* ChatView.swift */,
+				FC5EF381234D418D003FFB65 /* DashboardView.swift */,
 				FC8320402344025700D0CF55 /* Assets.xcassets */,
 				FC8320452344025700D0CF55 /* LaunchScreen.storyboard */,
 				FC8320482344025700D0CF55 /* Info.plist */,
@@ -220,7 +231,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC83203B2344025500D0CF55 /* AppDelegate.swift in Sources */,
+				FC5EF37E234D4178003FFB65 /* CreateProjectView.swift in Sources */,
+				FC5EF37C234D412B003FFB65 /* MainView.swift in Sources */,
+				FC5EF382234D418D003FFB65 /* DashboardView.swift in Sources */,
 				FC83203D2344025500D0CF55 /* SceneDelegate.swift in Sources */,
+				FC5EF380234D4183003FFB65 /* ChatView.swift in Sources */,
 				FC83203F2344025500D0CF55 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
