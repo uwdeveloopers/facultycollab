@@ -1,52 +1,63 @@
 //
-//
-//  DashboardView
-//
-//  Work-in-progress by Jason. If it crashes, I'm sorry :(
+//  DashboardView: a work in progress by Jason. Sorry if it crashes :(
 //
 //
 
 import SwiftUI
 
 struct DashboardView: View {
-    @State var search: String = "Search"
+    @State private var search: String = ""
     var body: some View {
-        VStack {
-            Text("WATcollab")
-                .font(.title)
-                .bold()
-                .foregroundColor(.yellow)
-                .background(Color.black)
+        VStack(spacing: 20) {
             HStack {
-                Button( action: {},
-                        label: { Image(systemName: "house")
-                })
-            Spacer()}
+                Spacer()
+                Text("WATcollab")
+                    .font(.system(size: 50))
+                    .bold()
+                    .foregroundColor(.yellow)
+                Spacer()
+            }.background(Color.black)
+            Image("Colors")
+                .resizable()
+                .scaledToFit()
+            HStack {
+                Button( action: {}, label: { Image(systemName: "house") } )
+                Spacer()
+                Button( action: {}, label: {
+                    Image(systemName: "pencil")
+                    Text("Post")})
+            }.padding()
             Divider()
             Text("Explore")
-                .font(.subheadline)
+                .font(.system(size: 30))
                 .foregroundColor(.purple)
-            Spacer()
             TextField("Search", text: $search)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .textFieldStyle(RoundedBorderTextFieldStyle()).padding()
             TabView {
-                Text("All Faculties").tabItem({
+                List {
+                    Text("Hello")
+                    Text("Darkness")
+                    Text("My")
+                }.tabItem({
                     Image(systemName: "circle")
                     Text("All")}).tag(0)
-                Text("Math Faculty").tabItem({
-                    Image(systemName: "plus")
+                List {
+                    Text("Old")
+                    Text("Friend")
+                }.tabItem({
+                    Image(systemName: "plusminus")
                     Text("Math")}).tag(1)
                 Text("Engineering Faculty").tabItem({
                     Image(systemName: "gear")
-                    Text("Engineering")}).tag(1)
+                    Text("Engineering")}).tag(2)
                 Text("Science Faculty").tabItem({
-                    Image(systemName: "potion")
-                    Text("Science")}).tag(1)
+                    Image(systemName: "tornado")
+                    Text("Science")}).tag(3)
                 Text("Arts Faculty").tabItem({
-                    Image(systemName: "pencil")
-                    Text("Arts")}).tag(1)
+                    Image(systemName: "paintbrush")
+                    Text("Arts")}).tag(4)
             }
-    }.padding()
+        }
     }
 }
 
