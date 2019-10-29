@@ -9,6 +9,8 @@ import SwiftUI
 
 struct DashboardView: View {
     @State private var search: String = ""
+    
+    
     var body: some View {
         ZStack {
             Color.yellow.edgesIgnoringSafeArea(.all)
