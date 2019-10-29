@@ -20,6 +20,7 @@
 		FC8320472344025700D0CF55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC8320452344025700D0CF55 /* LaunchScreen.storyboard */; };
 		FC83204F23440BCE00D0CF55 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC83204E23440BCE00D0CF55 /* GoogleService-Info.plist */; };
 		FCD292AE2368F25400E5F0F3 /* project.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD292AD2368F25400E5F0F3 /* project.swift */; };
+		FCD292B12368F59200E5F0F3 /* FirebaseSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCD292B02368F59200E5F0F3 /* FirebaseSession.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		FC8320482344025700D0CF55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC83204E23440BCE00D0CF55 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FCD292AD2368F25400E5F0F3 /* project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = project.swift; sourceTree = "<group>"; };
+		FCD292B02368F59200E5F0F3 /* FirebaseSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseSession.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		FC8320392344025500D0CF55 /* facultycollab */ = {
 			isa = PBXGroup;
 			children = (
+				FCD292AF2368F58100E5F0F3 /* Firebase */,
 				FC83203A2344025500D0CF55 /* AppDelegate.swift */,
 				FC83203C2344025500D0CF55 /* SceneDelegate.swift */,
 				FC83203E2344025500D0CF55 /* ContentView.swift */,
@@ -115,6 +118,14 @@
 				FC8320432344025700D0CF55 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FCD292AF2368F58100E5F0F3 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				FCD292B02368F59200E5F0F3 /* FirebaseSession.swift */,
+			);
+			path = Firebase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +250,7 @@
 				FC5EF382234D418D003FFB65 /* DashboardView.swift in Sources */,
 				FC83203D2344025500D0CF55 /* SceneDelegate.swift in Sources */,
 				FC5EF380234D4183003FFB65 /* ChatView.swift in Sources */,
+				FCD292B12368F59200E5F0F3 /* FirebaseSession.swift in Sources */,
 				FC83203F2344025500D0CF55 /* ContentView.swift in Sources */,
 				FCD292AE2368F25400E5F0F3 /* project.swift in Sources */,
 			);

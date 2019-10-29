@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct prject: Identifiable {
+struct project: Identifiable {
     let description: String
     let title: String
     let tags: NSDictionary
@@ -22,6 +22,5 @@ struct prject: Identifiable {
         self.url = url
         self.id = id
     }
-    
     
 }
