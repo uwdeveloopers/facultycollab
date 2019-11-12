@@ -11,14 +11,14 @@ import Foundation
 struct project: Identifiable {
     let description: String
     let title: String
-    let tags: NSDictionary
+    //let tags: NSDictionary removed cuz idk how to intialize this field
     let url: String
     let id: String
     
-    init(title: String, description: String, tags: NSDictionary, url: String, id: String) {
+    init(title: String, description: String, url: String, id: String) {
         self.title = title
         self.description = description
-        self.tags = tags
+      //  self.tags = tags
         self.url = url
         self.id = id
     }

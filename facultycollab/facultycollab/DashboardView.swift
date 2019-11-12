@@ -9,11 +9,12 @@ import SwiftUI
 
 struct DashboardView: View {
     @State private var search: String = ""
-    
+    // example project data
+    let projects = [project(title: "Econonomics", description: "Need programmers to help me code a testing app for econ 101 students", url: "economics", id: "32D32WF32DW")]
     
     var body: some View {
         ZStack {
-            Color.yellow.edgesIgnoringSafeArea(.all)
+            Color.white.edgesIgnoringSafeArea(.all)
             VStack(spacing: 20) {
                 HStack {
                     Spacer()
@@ -23,7 +24,7 @@ struct DashboardView: View {
                         .foregroundColor(.yellow)
                     Spacer()
                 }.background(Color.black)
-                Image("Colors")
+                Image("colors")
                     .resizable()
                     .scaledToFit()
                 HStack {
@@ -39,38 +40,21 @@ struct DashboardView: View {
                     .foregroundColor(.purple)
                 TextField("Search", text: $search)
                     .textFieldStyle(RoundedBorderTextFieldStyle()).padding()
-                TabView {
-                    List {
-                        Text("Hello")
-                        Text("Darkness")
-                        Text("My")
-                    }.tabItem({
-                        Image(systemName: "circle")
-                        Text("All")}).tag(0)
-                    List {
-                        Text("Cool")
-                        Text("Nice")
-                    }.tabItem({
-                        Image(systemName: "plusminus")
-                        Text("Math")}).tag(1)
-                    Text("Engineering Faculty").tabItem({
-                        Image(systemName: "gear")
-                        Text("Engineering")}).tag(2)
-                    Text("Science Faculty").tabItem({
-                        Image(systemName: "tornado")
-                        Text("Science")}).tag(3)
-                    Text("Arts Faculty").tabItem({
-                        Image(systemName: "paintbrush")
-                        Text("Arts")}).tag(4)
-                }
-            }
+                ScrollView(.vertical){
+                    VStack{
+                        ForEach(projects){
+                            project in CardView(image: project.url, title:project.title, subtitle:project.id, description: project.description )
+                                }
+                            }
+                    }
         }
     }
 }
 
+
 struct DashboardView_Previews: PreviewProvider {
     static var previews: some View {
         DashboardView()
+        }
     }
 }
-
