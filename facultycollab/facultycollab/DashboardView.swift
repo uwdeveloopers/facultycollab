@@ -10,7 +10,7 @@ import SwiftUI
 struct DashboardView: View {
     @State private var search: String = ""
     // example project data
-    let projects = [project(title: "Econonomics", description: "Need programmers to help me code a testing app for econ 101 students", url: "economics", id: "32D32WF32DW")]
+    let projects = [project(title: "Econonomics", description: "Need programmers to help me code a testing app for econ 101 students", url: "economics", id: "32D32WF32DW"), project(title: "Business Startup", description: "Need business students to help me fill out forms cuz I'm starting my own startup", url: "business", id: "3ASDASDBNN")]
     
     var body: some View {
         ZStack {
@@ -26,7 +26,7 @@ struct DashboardView: View {
                 }.background(Color.black)
                 Image("colors")
                     .resizable()
-                    .scaledToFit()
+                    .frame(width: 200.0, height: 150.0)
                 HStack {
                     Button( action: {}, label: { Image(systemName: "house") } )
                     Spacer()
@@ -46,7 +46,14 @@ struct DashboardView: View {
                             project in CardView(image: project.url, title:project.title, subtitle:project.id, description: project.description )
                                 }
                             }
-                    }
+                }.padding()
+                HStack{
+                    Button(action: {}, label: {Image(systemName: "circle")})
+                    Button(action: {}, label: {Image(systemName: "pencil")})
+                    Button( action: {}, label: {Image(systemName: "plusminus")})
+                    Button( action: {}, label: {Image(systemName: "gear")})
+                    Button( action: {}, label: {Image(systemName: "cloud")})
+                }
         }
     }
 }

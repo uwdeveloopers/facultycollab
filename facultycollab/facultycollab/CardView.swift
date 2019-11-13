@@ -15,7 +15,7 @@ struct CardView: View {
     
     var body: some View {
         VStack{
-            Image(image).resizable().aspectRatio(contentMode: .fit)
+            Image(image).resizable().frame(width: 200.0, height: 200.0)
             HStack {
                 VStack(alignment: .leading) {
                     Text(title)
@@ -25,11 +25,13 @@ struct CardView: View {
                     Text(subtitle)
                         .font(.caption)
                         .foregroundColor(.secondary)
-                }
-                }
-        }.cornerRadius(10).background(Color.yellow)
+                    Button(action: {}, label: {Text("Reply")
+                        Image(systemName: "pencil")})
+                    }
+            }.padding()
+        }.background(Color.yellow).cornerRadius(50)
         .overlay(
-            RoundedRectangle(cornerRadius: 10)
+            RoundedRectangle(cornerRadius: 50)
                 .stroke(Color(.sRGB, red: 150/255, green: 150/255, blue: 150/255, opacity: 0.1), lineWidth: 1)
         )
     }
